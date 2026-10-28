@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flask Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+            background: #f7f7f7;
+        }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        h1 {
+            margin-top: 0;
+        }
+        form {
+            margin: 1rem 0;
+        }
+        input, button, a.button {
+            padding: 0.5rem 0.75rem;
+            margin: 0.25rem 0;
+        }
+        ul {
+            padding-left: 1.25rem;
+        }
+        li {
+            margin: 0.5rem 0;
+        }
+        .row {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
